@@ -1,0 +1,8 @@
+title: Mythara News Network
+description: World and local events, witnessed. Eight lenses on every story — projected intent vs shadow intent, dissent preserved.
+baseurl: "/Mythara-Blog"
+url: "https://herbievelezjr.github.io"
+theme: minima
+plugins:
+  - jekyll-feed
+markdown: kramdown

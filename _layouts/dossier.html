@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} — Mythara News Network</title>
+  <link rel="stylesheet" href="{{ '/assets/css/witness.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-title" href="{{ '/' | relative_url }}">Mythara News Network</a>
+    <nav><a href="{{ '/methodology/' | relative_url }}">Methodology</a></nav>
+  </header>
+  <main class="dossier">
+    <p class="dossier-kicker">Witnessed dossier · {{ page.date | date: "%B %-d, %Y" }}</p>
+    <h1>{{ page.title }}</h1>
+
+    <div class="dossier-meta">
+      <span><strong>Outlets covering this event:</strong> {{ page.outlets | join: ", " }}</span>
+      <span><strong>Witnesses engaged:</strong> {{ page.witnesses_engaged | join: ", " }}</span>
+      {% if page.witnesses_abstained %}
+      <span><strong>Abstained:</strong> {{ page.witnesses_abstained | join: ", " }}</span>
+      {% endif %}
+    </div>
+
+    {{ content }}
+
+    {% if page.sources %}
+    <section class="dossier-sources">
+      <h2>Sources</h2>
+      <ul>
+      {% for s in page.sources %}
+        <li><a href="{{ s.url }}">{{ s.outlet }}</a> — {{ s.title }}</li>
+      {% endfor %}
+      </ul>
+    </section>
+    {% endif %}
+
+    <footer class="dossier-footer">
+      <p>Every claim above traces to a fetched article. Dissent between witnesses is preserved, never averaged. <a href="{{ '/methodology/' | relative_url }}">Read the methodology.</a></p>
+    </footer>
+  </main>
+</body>
+</html>

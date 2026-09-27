@@ -1,0 +1,136 @@
+/* Mythara News Network — witnessed dossier theme */
+:root {
+  --ink: #1a1a2e;
+  --paper: #faf9f7;
+  --projected: #2b6cb0;
+  --shadow: #9b2c2c;
+  --muted: #718096;
+  --line: #e2e8f0;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Georgia, 'Times New Roman', serif;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 1.2rem 2rem;
+  border-bottom: 2px solid var(--ink);
+  font-family: -apple-system, 'Segoe UI', sans-serif;
+}
+
+.site-title {
+  font-weight: 800;
+  font-size: 1.1rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.site-header nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.dossier, .page-content {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+.dossier-kicker {
+  font-family: -apple-system, 'Segoe UI', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.dossier h1 {
+  font-size: 2.2rem;
+  line-height: 1.2;
+  margin: 0.5rem 0 1.5rem;
+}
+
+.dossier-meta {
+  font-family: -apple-system, 'Segoe UI', sans-serif;
+  font-size: 0.85rem;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 0.8rem 0;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.dossier h2 {
+  font-family: -apple-system, 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-top: 2.5rem;
+}
+
+/* Projected vs shadow panels */
+.intent-projected, .intent-shadow {
+  border-left: 4px solid;
+  padding: 1rem 1.2rem;
+  margin: 1.2rem 0;
+  background: #fff;
+}
+
+.intent-projected { border-color: var(--projected); }
+.intent-shadow { border-color: var(--shadow); }
+
+.intent-projected > strong, .intent-shadow > strong {
+  font-family: -apple-system, 'Segoe UI', sans-serif;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.intent-projected > strong { color: var(--projected); }
+.intent-shadow > strong { color: var(--shadow); }
+
+.witness-name {
+  font-family: -apple-system, 'Segoe UI', sans-serif;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.abstained {
+  color: var(--muted);
+  font-style: italic;
+}
+
+.dossier-sources {
+  margin-top: 3rem;
+  border-top: 2px solid var(--ink);
+  padding-top: 1rem;
+}
+
+.dossier-sources li {
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+}
+
+.dossier-footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-family: -apple-system, 'Segoe UI', sans-serif;
+}
