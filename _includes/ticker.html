@@ -1,0 +1,35 @@
+<div class="ticker-wrap" aria-label="Latest witnessed events">
+  <span class="ticker-label">Witnessed</span>
+  <div class="ticker-viewport">
+    <div class="ticker-track" id="ticker-track">
+      <span class="ticker-loading">Loading the wire…</span>
+    </div>
+  </div>
+</div>
+<script>
+(function() {
+  fetch('/Mythara-Blog/ticker.json')
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
+      var track = document.getElementById('ticker-track');
+      if (!data.items || !data.items.length) {
+        track.innerHTML = '<span class="ticker-loading">No dossiers yet — the witnesses are reading.</span>';
+        return;
+      }
+      var html = data.items.map(function(item) {
+        var label = item.witness ? '<span class="ticker-witness">' + item.witness + '</span> ' : '';
+        var text = '<span class="ticker-text">' + item.text + '</span>';
+        var inner = label + text;
+        return item.url
+          ? '<a class="ticker-item" href="' + item.url + '">' + inner + '</a>'
+          : '<span class="ticker-item">' + inner + '</span>';
+      }).join('<span class="ticker-sep">///</span>');
+      // duplicate for a seamless loop
+      track.innerHTML = html + '<span class="ticker-sep">///</span>' + html;
+    })
+    .catch(function() {
+      document.getElementById('ticker-track').innerHTML =
+        '<span class="ticker-loading">The wire is quiet.</span>';
+    });
+})();
+</script>

@@ -134,3 +134,133 @@ body {
   color: var(--muted);
   font-family: -apple-system, 'Segoe UI', sans-serif;
 }
+
+/* Ticker — Times Square LED wall style */
+.ticker-wrap {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: stretch;
+  background: #000;
+  color: #fff;
+  font-family: 'Arial Narrow', Arial, sans-serif;
+  overflow: hidden;
+  border-top: 4px solid #c00;
+  box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.55);
+}
+
+.ticker-label {
+  background: #c00;
+  color: #fff;
+  font-weight: 900;
+  font-size: 1rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.9rem 1.2rem;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.6);
+}
+
+.ticker-item {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 0.9rem 0.2rem;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.35);
+}
+
+.ticker-witness {
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  color: #ffb300;
+  font-weight: 900;
+  margin-right: 0.5rem;
+  text-shadow: 0 0 10px rgba(255, 179, 0, 0.7);
+}
+
+.ticker-sep {
+  color: #c00;
+  font-weight: 900;
+  padding: 0 1.5rem;
+  font-size: 1.15rem;
+}
+
+body {
+  padding-bottom: 3.8rem;
+}
+
+.ticker-label {
+  background: var(--shadow);
+  color: #fff;
+  font-weight: 800;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.7rem 1rem;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+.ticker-viewport {
+  overflow: hidden;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.ticker-track {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  animation: ticker-scroll 60s linear infinite;
+  padding-left: 1rem;
+}
+
+.ticker-wrap:hover .ticker-track {
+  animation-play-state: paused;
+}
+
+@keyframes ticker-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.ticker-item {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 0.7rem 0.2rem;
+}
+
+a.ticker-item:hover { text-decoration: underline; }
+
+.ticker-witness {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  color: #fbd38d;
+  font-weight: 700;
+  margin-right: 0.4rem;
+}
+
+.ticker-sep {
+  color: var(--muted);
+  padding: 0 1.2rem;
+}
+
+.ticker-loading {
+  color: var(--muted);
+  font-size: 0.9rem;
+  padding: 0.7rem 0;
+}
