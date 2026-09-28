@@ -6,7 +6,7 @@ date: 2026-09-28
 
 # Mythara News Network — brief for 2026-09-28
 
-_Morning edition._ 922 event(s) read from fetched RSS articles; top events ranked by outlet count (more tellings = more to compare)._
+_Morning edition._ 931 event(s) read from fetched RSS articles; top events ranked by outlet count (more tellings = more to compare)._
 
 ## US trade negotiations
 
@@ -75,11 +75,35 @@ _Index levels as of 2026-09-28 (Yahoo Finance)._
 
 [full dossier](/Mythara-Blog/2026/09/28/61edc0d9fec6.html)
 
-### 5. No handshakes between Republic of Ireland and Israel
 
-7 articles across 3 outlets: Al Jazeera, BBC, Fox News. Our reporters read it **Split** — hermes, hades, dionysus pushed back; nemesis checked out; janus, demeter, eros, persephone sat it out.
+## Business
 
-[full dossier](/Mythara-Blog/2026/09/28/e22e5494d8c7.html)
+### 1. Blackstone-Backed Insurance Underwriter The Fidelis Partnership Files for IPO
+
+3 articles across 3 outlets: Insurance Business, Insurance Day, Insurance Journal. Our reporters read it **Split** — hermes, hades pushed back; nemesis, dionysus checked out; janus, demeter, eros, persephone sat it out.
+
+[full dossier](/Mythara-Blog/2026/09/28/42ad1ee85599.html)
+
+### 2. REDLattice To Become Public Via $1.25B SPAC Transaction
+
+1 articles across 1 outlets: IPO Edge. Our reporters read it **Split** — hades pushed back; nemesis checked out; hermes, janus, demeter, dionysus, eros, persephone sat it out.
+
+[full dossier](/Mythara-Blog/2026/09/28/32e37c67061d.html)
+
+
+## TechTalk
+
+### 1. New early October Prime Day deals just dropped — I hand-picked 41+ actually worth shopping
+
+3 articles across 3 outlets: NBC News, The Verge, Wired. Our reporters read it **Split** — hermes, hades, demeter pushed back; nemesis, dionysus checked out; janus, eros, persephone sat it out.
+
+[full dossier](/Mythara-Blog/2026/09/28/1000757b78de.html)
+
+### 2. Nvidia announces security system to stop AI agents from going rogue
+
+2 articles across 2 outlets: CBS News, CNBC. Our reporters read it **Split** — hermes, hades, demeter pushed back; nemesis, dionysus checked out; janus, eros, persephone sat it out.
+
+[full dossier](/Mythara-Blog/2026/09/28/0c78a9de9678.html)
 
 
 ## More news
@@ -89,10 +113,4 @@ _Index levels as of 2026-09-28 (Yahoo Finance)._
 5 articles across 4 outlets: CNBC, MarketWatch, TechCrunch, WSJ. Our reporters read it **Split** — hermes, hades pushed back; nemesis, dionysus checked out; janus, demeter, eros, persephone sat it out.
 
 [full dossier](/Mythara-Blog/2026/09/28/8a2933ef335c.html)
-
-### 2. AMD will acquire Fei-Fei Li’s World Labs for $8.2 billion
-
-4 articles across 4 outlets: CNBC, MarketWatch, TechCrunch, The Verge. Our reporters read it **Split** — hermes, hades, demeter, persephone pushed back; janus, nemesis, dionysus checked out; eros sat it out.
-
-[full dossier](/Mythara-Blog/2026/09/28/8ac537765acc.html)
 
