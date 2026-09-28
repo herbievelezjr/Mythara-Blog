@@ -1,5 +1,5 @@
-<div class="ticker-wrap" aria-label="Latest witnessed events">
-  <span class="ticker-label">Witnessed</span>
+<div class="ticker-wrap" aria-label="Latest stories">
+  <span class="ticker-label">Latest</span>
   <div class="ticker-viewport">
     <div class="ticker-track" id="ticker-track">
       <span class="ticker-loading">Loading the wire…</span>
@@ -13,7 +13,7 @@
     .then(function(data) {
       var track = document.getElementById('ticker-track');
       if (!data.items || !data.items.length) {
-        track.innerHTML = '<span class="ticker-loading">No dossiers yet — the witnesses are reading.</span>';
+        track.innerHTML = '<span class="ticker-loading">No stories yet — the reporters are reading.</span>';
         return;
       }
       var html = data.items.map(function(item) {

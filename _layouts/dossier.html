@@ -12,14 +12,14 @@
     <nav><a href="{{ '/methodology/' | relative_url }}">Methodology</a></nav>
   </header>
   <main class="dossier">
-    <p class="dossier-kicker">Witnessed dossier · {{ page.date | date: "%B %-d, %Y" }}</p>
+    <p class="dossier-kicker">{{ page.date | date: "%B %-d, %Y" }}</p>
     <h1>{{ page.title }}</h1>
 
     <div class="dossier-meta">
       <span><strong>Outlets covering this event:</strong> {{ page.outlets | join: ", " }}</span>
-      <span><strong>Witnesses engaged:</strong> {{ page.witnesses_engaged | join: ", " }}</span>
+      <span><strong>Reporters who weighed in:</strong> {% for w in page.witnesses_engaged %}{{ w | capitalize }}{% unless forloop.last %}, {% endunless %}{% endfor %}</span>
       {% if page.witnesses_abstained %}
-      <span><strong>Abstained:</strong> {{ page.witnesses_abstained | join: ", " }}</span>
+      <span><strong>Sat this one out:</strong> {% for w in page.witnesses_abstained %}{{ w | capitalize }}{% unless forloop.last %}, {% endunless %}{% endfor %}</span>
       {% endif %}
     </div>
 
@@ -37,7 +37,7 @@
     {% endif %}
 
     <footer class="dossier-footer">
-      <p>Every claim above traces to a fetched article. Dissent between witnesses is preserved, never averaged. <a href="{{ '/methodology/' | relative_url }}">Read the methodology.</a></p>
+      <p>Every claim above comes from a linked article. When our reporters disagree, we print the disagreement. <a href="{{ '/methodology/' | relative_url }}">How this gets made.</a></p>
     </footer>
   </main>
 </body>
