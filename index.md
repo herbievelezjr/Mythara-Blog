@@ -17,7 +17,7 @@ When the reporters disagree, the disagreement is printed. When the evidence is t
 
 {% assign morning = site.posts | where_exp: "p", "p.title contains 'Morning edition'" %}
 {% for post in morning limit:1 %}
-- [{{ post.title }}]({{ post.url }}) — {{ post.date | date: "%B %-d, %Y" }}
+- [{{ post.title }}]({{ post.url | relative_url }}) — {{ post.date | date: "%B %-d, %Y" }}
 {% endfor %}
 
 {% assign topics = "trade:US trade negotiations|washington:Washington|world:World|money:Money & markets|tech:Tech & AI|denver:Denver & Colorado|sports:Sports|culture:Culture|science:Science & health|more:More news" | split: "|" %}
@@ -30,7 +30,7 @@ When the reporters disagree, the disagreement is printed. When the evidence is t
 ## {{ tname }}
 
 {% for post in tposts limit:8 %}
-- [{{ post.title }}]({{ post.url }}) — {{ post.date | date: "%B %-d, %Y" }}
+- [{{ post.title }}]({{ post.url | relative_url }}) — {{ post.date | date: "%B %-d, %Y" }}
 {% endfor %}
 {% endif %}
 {% endfor %}
