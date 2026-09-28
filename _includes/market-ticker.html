@@ -1,0 +1,39 @@
+<div class="market-wrap" aria-label="Market snapshot">
+  <span class="market-label">Markets</span>
+  <div class="ticker-viewport">
+    <div class="ticker-track market-track" id="market-track">
+      <span class="ticker-loading">Reading the tape…</span>
+    </div>
+  </div>
+</div>
+<script>
+(function() {
+  fetch('/Mythara-Blog/markets.json')
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
+      var track = document.getElementById('market-track');
+      if (!data.indexes || !data.indexes.length) {
+        track.innerHTML = '<span class="ticker-loading">Market data unavailable.</span>';
+        return;
+      }
+      var html = data.indexes.map(function(m) {
+        var up = m.day_pct >= 0;
+        var cls = up ? 'mkt-up' : 'mkt-down';
+        var arrow = up ? '▲' : '▼';
+        var lvl = m.level.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+        return '<span class="ticker-item"><span class="mkt-name">' + m.name + '</span> ' +
+          '<span class="mkt-level">' + lvl + '</span> ' +
+          '<span class="' + cls + '">' + arrow + ' ' + (up ? '+' : '') + m.day_pct.toFixed(2) + '%</span></span>';
+      }).join('<span class="ticker-sep">///</span>');
+      var asof = data.as_of
+        ? '<span class="ticker-item mkt-asof">as of ' + data.as_of + '</span><span class="ticker-sep">///</span>'
+        : '';
+      var full = asof + html + '<span class="ticker-sep">///</span>';
+      track.innerHTML = full + full; // duplicate for a seamless loop
+    })
+    .catch(function() {
+      document.getElementById('market-track').innerHTML =
+        '<span class="ticker-loading">Market data unavailable.</span>';
+    });
+})();
+</script>

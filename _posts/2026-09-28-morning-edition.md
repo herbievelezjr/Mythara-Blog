@@ -6,7 +6,7 @@ date: 2026-09-28
 
 # Mythara News Network — brief for 2026-09-28
 
-_Morning edition._ 656 event(s) read from fetched RSS articles; top events ranked by outlet count (more tellings = more to compare)._
+_Morning edition._ 922 event(s) read from fetched RSS articles; top events ranked by outlet count (more tellings = more to compare)._
 
 ## US trade negotiations
 
@@ -28,26 +28,26 @@ _Morning edition._ 656 event(s) read from fetched RSS articles; top events ranke
 
 [full dossier](/Mythara-Blog/2026/09/28/18d2a4c6363f.html)
 
-### 4. Canada still talking trade with U.S. officials despite no meetings: LeBlanc
-
-3 articles across 3 outlets: AP News, CTV News, Global News. Our reporters read it **Split** — hermes, hades, demeter pushed back; nemesis, dionysus checked out; janus, eros, persephone sat it out.
-
-[full dossier](/Mythara-Blog/2026/09/28/17cc9a6488e0.html)
-
 
 ## Market analysis
 
-_Index levels as of 2026-09-25 (Yahoo Finance)._
+_Index levels as of 2026-09-28 (Yahoo Finance)._
 
-- **S&P 500** 7,743.41 (+0.51% today; +1.21% this week; +0.86% this month; above its 20-day average)
-- **Nasdaq Composite** 27,068.72 (+0.48% today; +2.06% this week; +3.51% this month; above its 20-day average)
-- **NYSE Composite** 23,912.59 (+0.40% today; -0.36% this week; -3.46% this month; below its 20-day average)
+- **S&P 500** 7,683.69 (-0.77% today; -1.04% this week; +0.10% this month; above its 20-day average)
+- **Nasdaq Composite** 26,820.38 (-0.92% today; -1.11% this week; +2.64% this month; above its 20-day average)
+- **NYSE Composite** 23,757.31 (-0.65% today; -1.37% this week; -3.98% this month; below its 20-day average)
 
 ### What's moving markets
 
 - Trump is weighing whether to grant Canada a tariff reprieve — [full dossier](/Mythara-Blog/2026/09/28/9e53eee884a4.html)
 - Carney Seeks New Trade Partners for Canada, But Knows the Limits — [full dossier](/Mythara-Blog/2026/09/28/706ce47f2962.html)
 - US-Canada trade negotiations suspended, Carney vows dollar-for-dollar retaliation against Trump's 50% tariffs — [full dossier](/Mythara-Blog/2026/09/28/18d2a4c6363f.html)
+
+### IPO watch
+
+- Blackstone-Backed Insurance Underwriter The Fidelis Partnership Files for IPO — [full dossier](/Mythara-Blog/2026/09/28/42ad1ee85599.html)
+- Indian billionaire’s payments firm plots biggest London flotation in years — [full dossier](/Mythara-Blog/2026/09/28/a385198bc841.html)
+- Anthropic IPO Date: What Investors Need to Know Before It Prices — [full dossier](/Mythara-Blog/2026/09/28/e6a761b310e8.html)
 
 ## World
 
@@ -84,9 +84,15 @@ _Index levels as of 2026-09-25 (Yahoo Finance)._
 
 ## More news
 
-### 1. Hurricane Nolo lashes Hawaii as new threat of 'volcanic hail' arises
+### 1. Meta launches enterprise AI platform, hires MongoDB CEO to lead new initiative
 
-4 articles across 3 outlets: ABC News, CBS News, The Guardian. Our reporters read it **Split** — hermes, hades pushed back; nemesis, dionysus checked out; janus, demeter, eros, persephone sat it out.
+5 articles across 4 outlets: CNBC, MarketWatch, TechCrunch, WSJ. Our reporters read it **Split** — hermes, hades pushed back; nemesis, dionysus checked out; janus, demeter, eros, persephone sat it out.
 
-[full dossier](/Mythara-Blog/2026/09/28/f0e94e3aa9cb.html)
+[full dossier](/Mythara-Blog/2026/09/28/8a2933ef335c.html)
+
+### 2. AMD will acquire Fei-Fei Li’s World Labs for $8.2 billion
+
+4 articles across 4 outlets: CNBC, MarketWatch, TechCrunch, The Verge. Our reporters read it **Split** — hermes, hades, demeter, persephone pushed back; janus, nemesis, dionysus checked out; eros sat it out.
+
+[full dossier](/Mythara-Blog/2026/09/28/8ac537765acc.html)
 
