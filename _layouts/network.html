@@ -10,11 +10,14 @@
 <body>
   <header class="site-header">
     <a class="site-title" href="{{ '/' | relative_url }}">Mythara News Network</a>
-    <nav><a href="{{ '/methodology/' | relative_url }}">Methodology</a></nav>
+    <nav><a href="{{ '/methodology/' | relative_url }}">Methodology</a> · <a href="{{ '/about/' | relative_url }}">About</a></nav>
   </header>
   <main class="page-content">
     {{ content }}
   </main>
   {% include ticker.html %}
+  <footer class="site-footer">
+    Published by Herb Velez · Denver, Colorado
+  </footer>
 </body>
 </html>
