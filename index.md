@@ -13,4 +13,24 @@ When the reporters disagree, the disagreement is printed. When the evidence is t
 
 ---
 
-## Latest dossiers
+## Morning edition
+
+{% assign morning = site.posts | where_exp: "p", "p.title contains 'Morning edition'" %}
+{% for post in morning limit:1 %}
+- [{{ post.title }}]({{ post.url }}) — {{ post.date | date: "%B %-d, %Y" }}
+{% endfor %}
+
+{% assign topics = "trade:US trade negotiations|washington:Washington|world:World|money:Money & markets|tech:Tech & AI|denver:Denver & Colorado|sports:Sports|culture:Culture|science:Science & health|more:More news" | split: "|" %}
+{% for pair in topics %}
+{% assign bits = pair | split: ":" %}
+{% assign tslug = bits[0] %}
+{% assign tname = bits[1] %}
+{% assign tposts = site.posts | where: "topic", tslug %}
+{% if tposts.size > 0 %}
+## {{ tname }}
+
+{% for post in tposts limit:8 %}
+- [{{ post.title }}]({{ post.url }}) — {{ post.date | date: "%B %-d, %Y" }}
+{% endfor %}
+{% endif %}
+{% endfor %}
