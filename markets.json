@@ -1,1 +1,1 @@
-{"as_of": null, "indexes": [], "updated": "2026-10-08T01:44:22.161573-06:00"}
+{"as_of": "2026-10-07", "indexes": [{"name": "S&P 500", "level": 7801.77, "day_pct": -0.22}, {"name": "Nasdaq Composite", "level": 27538.69, "day_pct": -0.22}, {"name": "NYSE Composite", "level": 23701.92, "day_pct": -0.92}], "updated": "2026-10-08T06:27:06.328816-06:00"}

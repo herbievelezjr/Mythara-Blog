@@ -6,7 +6,7 @@ date: 2026-10-08
 
 # Mythara News Network — brief for 2026-10-08
 
-_Morning edition._ 5384 event(s) read from fetched RSS articles; top events ranked by outlet count (more tellings = more to compare)._
+_Morning edition._ 5624 event(s) read from fetched RSS articles; top events ranked by outlet count (more tellings = more to compare)._
 
 ## US trade negotiations
 
@@ -33,7 +33,9 @@ _Morning edition._ 5384 event(s) read from fetched RSS articles; top events rank
 
 _Index levels as of 2026-10-07 (Yahoo Finance)._
 
+- **S&P 500** 7,801.77 (-0.22% today; +1.96% this week; +1.08% this month; above its 20-day average)
 - **Nasdaq Composite** 27,538.69 (-0.22% today; +2.52% this week; +3.89% this month; above its 20-day average)
+- **NYSE Composite** 23,701.92 (-0.92% today; +0.90% this week; -3.80% this month; below its 20-day average)
 
 ### What's moving markets
 
